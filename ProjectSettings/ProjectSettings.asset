@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: d08cb316d008b08468ee3be81bde870b
+  productGUID: 714f732aa459d5f4fa2cfd89cd29ffcd
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -920,10 +920,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: beb564d8-cfdb-43a4-8a36-b08c79d55c2a
+  cloudProjectId: c38ca0f7-b07c-4456-b698-da97bcbbc63f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: TactiCorp
+  projectName: TactiCorp 2025-08-25_19-02-49
   organizationId: quirke
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
