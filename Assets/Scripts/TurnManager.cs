@@ -27,7 +27,7 @@ public class TurnManager : MonoBehaviour
       playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
       //sets the text to be your turn off rip (here incase there is a level you are not first)
-      whosTurnText.text = "Your Turn";
+     
    }
 
 
@@ -45,14 +45,23 @@ public class TurnManager : MonoBehaviour
        {
            case 1:
                turn = 2;
-               whosTurnText.text = "Your Turn";
                playerScript.actionsLeft = 5;
                playerScript.actionText.text = playerScript.actionsLeft + " : AP";
                break;
            case 2:
                turn = 1;
-               whosTurnText.text = "Enemy Turn";
                break;
        }
+   }
+
+   private void Update()
+   {
+       //switch that handles the turn UI
+       whosTurnText.text = turn switch
+       {
+           1 => "Your Turn",
+           2 => "Enemy Turn",
+           _ => whosTurnText.text
+       };
    }
 }

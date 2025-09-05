@@ -40,14 +40,15 @@ public class Enemy : MonoBehaviour
     //method to move the enemy
     private void MoveToPlayer()
     {
-        //moves the agent to the player
+        //moves the agent to the player if its in range
+        if (!PlayerIsInRange()) return;
         enemyAgent.destination = (playerObject.transform.position);
     }
 
     private void Update()
     {
         //if the player is not in range or if its the players turn return and go no further. otherwise move the player
-        if (!PlayerIsInRange() || turnManager.turn == 1) return;
+        if (turnManager.turn == 1) return;
       MoveToPlayer();
     }
 
